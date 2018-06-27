@@ -1,3 +1,4 @@
+
 {
     "debug": true,
     "process": {
@@ -24,20 +25,20 @@
     },
     "cli": "tcp@127.0.0.1:7317",
     "db_log": {
-        "host": "localhost",
-        "user": "user",
-        "pass": "pass",
+        "host": "db",
+        "user": "root",
+        "pass": "root",
         "name": "trade_log"
     },
     "db_history": {
-        "host": "localhost",
-        "user": "user",
-        "pass": "pass",
+        "host": "db",
+        "user": "root",
+        "pass": "root",
         "name": "trade_history"
     },
     "assets": [
         {
-            "name": "BCH",
+            "name": "USDT",
             "prec_save": 20,
             "prec_show": 8
         }, {
@@ -45,7 +46,7 @@
             "prec_save": 12,
             "prec_show": 8
         }, {
-            "name": "LTC",
+            "name": "XRP",
             "prec_save": 12,
             "prec_show": 8
         }, {
@@ -53,104 +54,61 @@
             "prec_save": 12,
             "prec_show": 8
         }, {
-            "name": "ETC",
-            "prec_save": 12,
-            "prec_show": 8
-        }, {
-            "name": "ZEC",
-            "prec_save": 12,
-            "prec_show": 8
-        }, {
-            "name": "XMR",
-            "prec_save": 12,
-            "prec_show": 8
-        }, {
-            "name": "DSH",
+            "name": "VEO",
             "prec_save": 12,
             "prec_show": 8
         }
     ],
     "markets": [
         {
-            "name": "BTCBCH",
+            "name": "VEOBTC",
             "stock": {
+                "name": "VEO",
+                "prec": 8
+            },
+            "money": {
                 "name": "BTC",
                 "prec": 8
             },
-            "money": {
-                "name": "BCH",
-                "prec": 8
-            },
             "min_amount": "0.001"
         }, {
-            "name": "LTCBCH",
+            "name": "VEOETH",
             "stock": {
-                "name": "LTC",
+                "name": "VEO",
                 "prec": 8
             },
             "money": {
-                "name": "BCH",
+                "name": "ETH",
                 "prec": 8
             },
             "min_amount": "0.001"
         }, {
-            "name": "ETHBCH",
+            "name": "ETHBTC",
             "stock": {
                 "name": "ETH",
                 "prec": 8
             },
             "money": {
-                "name": "BCH",
+                "name": "BTC",
                 "prec": 8
             },
             "min_amount": "0.001"
         }, {
-            "name": "ETCBCH",
+            "name": "VEOXRP",
             "stock": {
-                "name": "ETC",
+                "name": "VEO",
                 "prec": 8
             },
             "money": {
-                "name": "BCH",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        }, {
-            "name": "ZECBCH",
-            "stock": {
-                "name": "ZEC",
-                "prec": 8
-            },
-            "money": {
-                "name": "BCH",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        }, {
-            "name": "XMRBCH",
-            "stock": {
-                "name": "XMR",
-                "prec": 8
-            },
-            "money": {
-                "name": "BCH",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        }, {
-            "name": "DSHBCH",
-            "stock": {
-                "name": "DSH",
-                "prec": 8
-            },
-            "money": {
-                "name": "BCH",
+                "name": "XRP",
                 "prec": 8
             },
             "min_amount": "0.001"
         }
     ],
-    "brokers": "127.0.0.1:9092",
+    "brokers": "mq:9092",
     "slice_interval": 3600,
-    "slice_keeptime": 259200 
+    "slice_keeptime": 259200
 }
+config.json
+Displaying config.json.
